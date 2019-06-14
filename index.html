@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Slapsgiving</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 fist d-flex align-items-center ">
+        <img class="img-fluid "
+          src="https://dtpmhvbsmffsz.cloudfront.net/posts/2017/11/03/59fd0322c28456502305ce5a/m_59fd038736d5947ddb05bbaa.jpg"
+          alt="">
+      </div>
+      <div class="col-4 chop d-flex justify-content-center ">
+        <img class="img-fluid"
+          src="https://www.wikihow.com/images/thumb/0/0d/Perform-a-Knife-Hand-Strike-in-Karate-Step-4.jpg/aid934339-v4-728px-Perform-a-Knife-Hand-Strike-in-Karate-Step-4.jpg"
+          alt="">
+      </div>
+      <div class="col-4 stomp d-flex justify-content-center">
+        <img class="img-fluid"
+          src="https://us.123rf.com/450wm/suslo/suslo1709/suslo170900008/86140285-stock-vector-a-big-foot-in-the-shoe-is-going-to-crush-a-man-the-man-is-frightened-and-closes-his-hands.jpg?ver=6"
+          alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <button onclick="punch()" class="btn btn-success" type="submit">Monkey Punch</button>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <input onclick="slap()" class="btn btn-success" type="button" value="Chopsaki">
+      </div>
+      <div class="col d-flex justify-content-center">
+        <button onclick="stomp()" class="btn btn-success" type="submit">Stomp</button>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center ">
+
+      <div class="col d-flex justify-content-center text-danger ">
+        <h5>HEALTH:<span id="life"></span></h5>
+      </div>
+      <div class="col d-flex justify-content-center text-danger">
+        <H5>HITS: <span id="strikes"></span></H5>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="game.js"></script>
+</body>
+
+</html>
