@@ -1,45 +1,51 @@
-let health = 10;
-let hits = 0;
+let Steve = {
+  hitPoints: 20,
+
+}
+let Ralph = {
+  hitPoints: 23,
+}
+
+let strikes = 0;
 
 
-let lifeElem = document.querySelector("#life")
+let hpElem = document.querySelector("#life")
 
 let hitsElem = document.querySelector("#strikes")
 
 function update() {
-  hits = 0
-  health = 10
-  hitsElem.innerHTML = hits.toString()
-  lifeElem.innerHTML = health.toString()
+  strikes = 0
+
+  hitsElem.innerHTML = strikes.toString()
+  hpElem.innerHTML = Ralph.hitPoints.toString()
 }
 
-
 function slap() {
-  health -= 1
-  hits += 1
-  hitsElem.innerHTML = hits.toString()
-  lifeElem.innerHTML = health.toString()
+  Ralph.hitPoints -= 1
+  strikes += 1
+  hitsElem.innerHTML = strikes.toString()
+  hpElem.innerHTML = Ralph.hitPoints.toString()
   death()
 }
 
 function punch() {
-  health -= 3
-  hits += 1
-  hitsElem.innerHTML = hits.toString()
-  lifeElem.innerHTML = health.toString()
+  Ralph.hitPoints -= 3
+  strikes += 1
+  hitsElem.innerHTML = strikes.toString()
+  hpElem.innerHTML = Ralph.hitPoints.toString()
   death()
 }
 function stomp() {
-  health -= 2
-  hits += 1
-  hitsElem.innerHTML = hits.toString()
-  lifeElem.innerHTML = health.toString()
+  Ralph.hitPoints -= 2
+  strikes += 1
+  hitsElem.innerHTML = strikes.toString()
+  hpElem.innerHTML = Ralph.hitpoints.toString()
   death()
 }
 
 
 function death() {
-  if (health <= 0) {
+  if (Ralph.hitPoints <= 0) {
     alert("opponent is dead")
     update()
   }

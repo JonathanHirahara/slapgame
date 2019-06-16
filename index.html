@@ -7,13 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="game.css">
   <title>Slapsgiving</title>
 </head>
 
 <body>
   <div class="container-fluid">
-    <div class="row">
+    <div class="row weapons">
       <div class="col-4 fist d-flex align-items-center ">
         <img class="img-fluid "
           src="https://dtpmhvbsmffsz.cloudfront.net/posts/2017/11/03/59fd0322c28456502305ce5a/m_59fd038736d5947ddb05bbaa.jpg"
@@ -50,7 +50,17 @@
         <H5>HITS: <span id="strikes"></span></H5>
       </div>
     </div>
-
+    <div class="row">
+      <h4>Choose Your Opponent</h4>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button onclick="choose(1)" type="button" class="btn btn-primary btn-lg">Steve</button>
+      </div>
+      <div class="col">
+        <button onclick="choose(2)" type="button" class="btn btn-primary btn-lg">Ralph</button>
+      </div>
+    </div>
   </div>
 
 
