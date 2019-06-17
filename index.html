@@ -14,16 +14,25 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col d-flex justify-content-center">
-        <h4>Choose Your Opponent</h4>
-      </div>
     </div>
     <div class="row">
       <div class="col d-flex justify-content-center">
         <button onclick="choose(2)" type="button" class="btn btn-primary btn-lg">Dave</button>
       </div>
       <div class="col d-flex justify-content-center">
+        <h4>Choose Your Opponent</h4>
+      </div>
+      <div class="col d-flex justify-content-center">
         <button onclick="choose(1)" type="button" class="btn btn-primary btn-lg">Steve</button>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center ">
+
+      <div class="col d-flex justify-content-end text-danger ">
+        <h5>HEALTH:<span id="life"></span></h5>
+      </div>
+      <div class="col d-flex justify-content-start text-danger">
+        <H5>HITS: <span id="strikes"></span></H5>
       </div>
     </div>
     <div class="row weapons">
@@ -44,6 +53,9 @@
       </div>
     </div>
     <div class="row">
+      <div class="col-1 d-flex justify-content-start">
+        <p>ATTACKS</p>
+      </div>
       <div class="col d-flex justify-content-center">
         <button onclick="hit(1)" class="btn btn-success" type="submit">Monkey Punch</button>
       </div>
@@ -54,13 +66,19 @@
         <button onclick="hit(3)" class="btn btn-success" type="submit">Stomp</button>
       </div>
     </div>
-    <div class="row d-flex justify-content-center ">
 
-      <div class="col d-flex justify-content-center text-danger ">
-        <h5>HEALTH:<span id="life"></span></h5>
+    <div class="row">
+      <div class="col-1 d-flex justify-content-start">
+        <p>Bonus Damage</p>
       </div>
-      <div class="col d-flex justify-content-center text-danger">
-        <H5>HITS: <span id="strikes"></span></H5>
+      <div class="col d-flex justify-content-center">
+        <button onclick="giveItem('stoneFist')" type="button" class="btn btn-danger">Stone Fists</button>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <button onclick="giveItem('knifeHand')" type="button" class="btn btn-danger">Knife Hand</button>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <button onclick="giveItem('leadFoot')" type="button" class="btn btn-danger">Lead Foot</button>
       </div>
     </div>
   </div>
